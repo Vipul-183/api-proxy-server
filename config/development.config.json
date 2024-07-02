@@ -1,0 +1,18 @@
+{
+    "PORT": 3000,
+    "redisConnection": {
+        "port": 6379,
+        "hostname": "localhost"
+    },
+    "url": {
+        "codeforces_base_url": "https://codeforces.com/"
+    },
+    "jwt": {
+        "secret": "kohli"
+    },
+    "rateLimitConfig": {
+        "RATE_LIMIT": 5,
+        "RATE_LIMIT_WINDOW": 60000,
+        "CACHE_DURATION": 300000
+    }
+}
