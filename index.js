@@ -12,8 +12,8 @@ app.use((req, res, next) => {
 });
 
 app.use('/proxy', router);
-app.use(() => {
-    throw { status: 404, message: 'Route Not Found' };
+app.use((req, res) => {
+    res.status(404).send({ message: 'Route Not Found' });
 });
 
 app.listen(PORT, () => {
